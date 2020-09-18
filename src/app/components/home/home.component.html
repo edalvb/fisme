@@ -1,0 +1,26 @@
+<h1 style="text-align: center;">Trámites a seguir para obtención del grado Bachiller</h1>
+
+<div class="example-action-buttons">
+  <button mat-button (click)="accordion.openAll()">Expandir</button>
+  <button mat-button (click)="accordion.closeAll()">Colapsar</button>
+</div>
+<mat-accordion class="example-headers-align" multi>
+
+  <mat-expansion-panel *ngFor="let doc of documents">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{doc.name}}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{doc.cost}}
+        <mat-icon>{{doc.icon}}</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-list *ngFor="let des of doc.description" role="list">
+      <mat-list-item role="listitem">{{des}}</mat-list-item>
+    </mat-list>
+
+  </mat-expansion-panel>
+
+</mat-accordion>
