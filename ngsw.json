@@ -1,0 +1,80 @@
+{
+  "configVersion": 1,
+  "timestamp": 1600463916353,
+  "index": "/fisme/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/fisme/favicon.ico",
+        "/fisme/index.html",
+        "/fisme/main.306d1d6353aa589fc85e.js",
+        "/fisme/manifest.webmanifest",
+        "/fisme/polyfills.35a5ca1855eb057f016a.js",
+        "/fisme/runtime.acf0dec4155e77772545.js",
+        "/fisme/styles.4154e53e924fd7329071.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/fisme/assets/icons/icon-128x128.png",
+        "/fisme/assets/icons/icon-144x144.png",
+        "/fisme/assets/icons/icon-152x152.png",
+        "/fisme/assets/icons/icon-192x192.png",
+        "/fisme/assets/icons/icon-384x384.png",
+        "/fisme/assets/icons/icon-512x512.png",
+        "/fisme/assets/icons/icon-72x72.png",
+        "/fisme/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/fisme/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/fisme/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/fisme/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/fisme/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/fisme/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/fisme/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/fisme/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/fisme/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/fisme/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/fisme/index.html": "0d31da21649ba55a889fb3cb40224d6db5259ffd",
+    "/fisme/main.306d1d6353aa589fc85e.js": "d2d564df0175a1b449fbcc5f7f850b23bf87957d",
+    "/fisme/manifest.webmanifest": "abef289157ef27ff32ab83ca03ad2367170e2cb6",
+    "/fisme/polyfills.35a5ca1855eb057f016a.js": "578360d24ce37383f261c7ef63b1f822d28e8dde",
+    "/fisme/runtime.acf0dec4155e77772545.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/fisme/styles.4154e53e924fd7329071.css": "f7b7e3bc5642549f6800a23a347f16f75ae511ea"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
