@@ -1,26 +1,38 @@
-<h1 style="text-align: center;">Trámites a seguir para obtención del grado Bachiller</h1>
+<div class="container-main">
+  <h1 style="text-align: center;">Trámites a seguir para obtención del grado Bachiller</h1>
 
-<div class="example-action-buttons">
-  <button mat-button (click)="accordion.openAll()">Expandir</button>
-  <button mat-button (click)="accordion.closeAll()">Colapsar</button>
+  <p style="font-style: italic; text-align: center;">Porfavor revisar que sus nombres y apellidos de sus documentos y su
+    DNI sean iguales.</p>
+
+  <mat-accordion class="accordion-headers-align" multi>
+
+    <mat-expansion-panel *ngFor="let doc of documents">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{doc.title}}
+        </mat-panel-title>
+        <mat-panel-description>
+          <span>
+            {{doc.description}}
+            <span class="cost" *ngIf="doc.cost">{{doc.cost | cost}}</span>
+          </span>
+          <mat-icon>{{doc.icon}}</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <mat-list role="list">
+        <mat-list-item *ngFor="let des of doc.content" role="listitem">
+          {{des}}
+        </mat-list-item>
+      </mat-list>
+
+    </mat-expansion-panel>
+
+  </mat-accordion>
+
+  <p [hidden]="true">Luego de realizar el pago correspondiente, remitir los vouchers de pagos o depósito al correo
+    institucional de la oficina correspondiente con copia a la Unidad de Tesorería
+    (tesoreria@untrm.edu.pe)(deysi.solano@untrm.edu.pe</p>
+
+
 </div>
-<mat-accordion class="example-headers-align" multi>
-
-  <mat-expansion-panel *ngFor="let doc of documents">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        {{doc.name}}
-      </mat-panel-title>
-      <mat-panel-description>
-        {{doc.cost}}
-        <mat-icon>{{doc.icon}}</mat-icon>
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-
-    <mat-list *ngFor="let des of doc.description" role="list">
-      <mat-list-item role="listitem">{{des}}</mat-list-item>
-    </mat-list>
-
-  </mat-expansion-panel>
-
-</mat-accordion>

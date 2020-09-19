@@ -9,45 +9,102 @@ import { MatAccordion } from '@angular/material/expansion';;
 export class HomeComponent implements OnInit {
   @ViewChild(MatAccordion) accordion: MatAccordion;
 
+  ctaUNTRM: string = "026-1022419";
+
   documents: Document[] = [
     {
-      name: "Constancia de Egresado",
-      cost: 12,
-      icon: "account_circle"
+      title: "Constancia",
+      description: "Egresado",
+      cost: 12.00,
+      content: [
+        `Pagar al Banco de la Nación al "9135" con el código "35"`,
+        `Presentar "Solicitud de Constancia de Egresado" a la Facultad`
+      ]
     },
     {
-      name: "Constancia de primera matrícula",
-      cost: 12,
-      icon: "account_circle"
+      title: "Constancia",
+      description: "Primera matrícula",
+      cost: 12.00,
+      content: [
+        `Pagar al Banco de la Nación al "9135" con el código "118"`,
+        `Presentar "Solicitud de Constancia de Primera Matrícula" a la Facultad`
+      ]
     },
     {
-      name: "Certificado de Estudios",
-      cost: 150,
-      icon: "account_circle"
+      title: "Certificado",
+      description: "Estudios",
+      cost: "~150.00",
+      content: [
+        `Pagar (1 x cda ciclo) al Banco de la Nación al "9135" con el código "8"`,
+        'Solicitar a la Facultad adjuntando los vouchers.'
+      ]
     },
     {
-      name: "Copia de DNI legalizado por Notario",
-      icon: "account_circle"
+      title: "DNI",
+      description: "Copia de DNI legalizado",
+      content: [
+        "Cuesta alrededor de S/ 5.00 en el Notario"
+      ]
     },
     {
-      name: "Constancia de No Adeudo",
-      cost: 10,
-      description: [
-        "Adquirir en la oficina del SISNOA"
-      ],
-      icon: "account_circle"
+      title: "SISNOA",
+      description: "Constancia No Adeudo",
+      cost: 10.00,
+      content: [
+        `Pagar al Banco de la Nación al "9135" con el código "37"`,
+        `Solicitar a "melissa.reyna@untrm.edu.pe" adjuntando el voucher.`
+      ]
     },
     {
-      name: "Adjuntar Documentos Legalizados",
-      description: [
+      title: "Fedatear",
+      description: "Documentos",
+      content: [
+        "Hacer el fedateo en Secretaría General de los siguientes:",
         "Certificado de Computación",
         "Certificado de Inglés",
         "Certificado de Actividades Integradoras",
         "Resolución de Prácticas Pre Profesionales"
-      ],
-      icon: "account_circle"
+      ]
+    },
+    {
+      title: "Carpeta",
+      description: "Adquirir Carpeta Bachiller",
+      cost: 150.00,
+      content: [
+        `Pagar en caja o al Banco de la Nación a la cuenta "${this.ctaUNTRM}"`,
+        `En Grados y Títulos aquirir "Solicitud de bachiller"`,
+        `En Grados y Títulos aquirir "Constancia"`,
+        `Hacer firmar la "Constancia" a DAYRA.`
+      ]
+    },
+    {
+      title: "Presentar",
+      description: "Carpeta de Bachiller",
+      content: [
+        `Presentar todos los requisitos a la Facultad.`
+      ]
+    },
+    {
+      title: "Constancia",
+      description: "Registro de Grado",
+      content: [
+        `Firmar el "Libro de Grado" en la Facultad.`,
+        `Llevar una foto tamaño carnet fondo blanco y con terno oscuro.`,
+        `La Facultad entregará la "Constancia de Registro de Grado".`,
+        `Con dicha Constancia debe ir a la Oficina de Grados y Títulos.`,
+      ]
+    },
+    {
+      title: "Caligrafiado",
+      description: "Tramitar Caligrafiado",
+      cost: 25,
+      content: [
+        `Pagar en caja o al Banco de la Nación a la cuenta "${this.ctaUNTRM}"`,
+        `Solicitud de Caligrafiado`,
+        `2 fotos tamaño carnet con terno oscuro, camisa blanca y fondo blanco, en material mate.`
+      ]
     }
-  ]
+  ];
 
   constructor() { }
 
@@ -57,8 +114,9 @@ export class HomeComponent implements OnInit {
 }
 
 export interface Document {
-  name: string,
-  cost?: number,
-  description?: string[],
-  icon?: string
+  title: string;
+  description: string;
+  cost?: number | string;
+  content?: string[];
+  icon?: string;
 }
