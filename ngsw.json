@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1600465053025,
+  "timestamp": 1600478663882,
   "index": "/fisme/index.html",
   "assetGroups": [
     {
@@ -11,13 +11,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "/fisme/favicon.ico",
         "/fisme/index.html",
-        "/fisme/main.abb2b17a2d0a9d6078b3.js",
+        "/fisme/main.04d76bec4156574c8397.js",
         "/fisme/manifest.webmanifest",
         "/fisme/polyfills.35a5ca1855eb057f016a.js",
         "/fisme/runtime.acf0dec4155e77772545.js",
-        "/fisme/styles.4154e53e924fd7329071.css"
+        "/fisme/styles.dcb765dd55c60c182b2a.css"
       ],
       "patterns": []
     },
@@ -36,7 +35,8 @@
         "/fisme/assets/icons/icon-384x384.png",
         "/fisme/assets/icons/icon-512x512.png",
         "/fisme/assets/icons/icon-72x72.png",
-        "/fisme/assets/icons/icon-96x96.png"
+        "/fisme/assets/icons/icon-96x96.png",
+        "/fisme/assets/img/favicon.png"
       ],
       "patterns": []
     }
@@ -51,13 +51,13 @@
     "/fisme/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "/fisme/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/fisme/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "/fisme/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/fisme/index.html": "c58124b333b5f8269a9293d997358b34a3f6b639",
-    "/fisme/main.abb2b17a2d0a9d6078b3.js": "b3db7bec55e32dc38ce1d9b8507cbbc75c7adb9a",
+    "/fisme/assets/img/favicon.png": "93a031df735ed12446bfa5e0d60fbe02597f5ff5",
+    "/fisme/index.html": "91c28ab32b7b28d87b5492fda13099fe86f4f275",
+    "/fisme/main.04d76bec4156574c8397.js": "e36e83fcd91a904e925875d0c8560ef1cd5e7442",
     "/fisme/manifest.webmanifest": "abef289157ef27ff32ab83ca03ad2367170e2cb6",
     "/fisme/polyfills.35a5ca1855eb057f016a.js": "578360d24ce37383f261c7ef63b1f822d28e8dde",
     "/fisme/runtime.acf0dec4155e77772545.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/fisme/styles.4154e53e924fd7329071.css": "f7b7e3bc5642549f6800a23a347f16f75ae511ea"
+    "/fisme/styles.dcb765dd55c60c182b2a.css": "5087f46cbfd58a90794bb1abcf3e5dbd5fba64dc"
   },
   "navigationUrls": [
     {
