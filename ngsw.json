@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1601196508563,
+  "timestamp": 1601210404535,
   "index": "/fisme/index.html",
   "assetGroups": [
     {
@@ -12,9 +12,9 @@
       },
       "urls": [
         "/fisme/index.html",
-        "/fisme/main.0bdba758f91904d0ad2b.js",
+        "/fisme/main.e92a2c5db33005907e46.js",
         "/fisme/manifest.webmanifest",
-        "/fisme/polyfills.35a5ca1855eb057f016a.js",
+        "/fisme/polyfills.4b590af2c26bc9baea04.js",
         "/fisme/runtime.acf0dec4155e77772545.js",
         "/fisme/styles.dcb765dd55c60c182b2a.css"
       ],
@@ -28,6 +28,9 @@
         "ignoreVary": true
       },
       "urls": [
+        "/fisme/assets/documents/Cronograma Matricula Extemporánea 2020-2.pdf",
+        "/fisme/assets/documents/Pagos por diversos conceptos año 2020.pdf",
+        "/fisme/assets/documents/Reglamento de practicas pre profesionales-aprobado 27 abril 2020.pdf",
         "/fisme/assets/icons/icon-128x128.png",
         "/fisme/assets/icons/icon-144x144.png",
         "/fisme/assets/icons/icon-152x152.png",
@@ -43,6 +46,9 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "/fisme/assets/documents/Cronograma Matricula Extemporánea 2020-2.pdf": "2c43fc5043e9d9a265736700cf49613ddad1d9e2",
+    "/fisme/assets/documents/Pagos por diversos conceptos año 2020.pdf": "820a8092a6090627de01061e3a7e928a16a90df3",
+    "/fisme/assets/documents/Reglamento de practicas pre profesionales-aprobado 27 abril 2020.pdf": "7e71e1f7de02179501f5c08a52f8a7862857819a",
     "/fisme/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/fisme/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "/fisme/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -52,10 +58,10 @@
     "/fisme/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/fisme/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/fisme/assets/img/favicon.png": "93a031df735ed12446bfa5e0d60fbe02597f5ff5",
-    "/fisme/index.html": "0d96048ec9ddca7d698462378de2132740f5a43e",
-    "/fisme/main.0bdba758f91904d0ad2b.js": "4bef1eb3d2a5f36d239ec759abffcddca01fc7c9",
+    "/fisme/index.html": "b020ccac54cc97f6f9877faaa8ffc3bca28ae636",
+    "/fisme/main.e92a2c5db33005907e46.js": "989d4f0ff0c601e89fca68293eb3d9e27265153b",
     "/fisme/manifest.webmanifest": "abef289157ef27ff32ab83ca03ad2367170e2cb6",
-    "/fisme/polyfills.35a5ca1855eb057f016a.js": "578360d24ce37383f261c7ef63b1f822d28e8dde",
+    "/fisme/polyfills.4b590af2c26bc9baea04.js": "de90307b8f0eeed5904fb3357650b0666280755b",
     "/fisme/runtime.acf0dec4155e77772545.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "/fisme/styles.dcb765dd55c60c182b2a.css": "5087f46cbfd58a90794bb1abcf3e5dbd5fba64dc"
   },
