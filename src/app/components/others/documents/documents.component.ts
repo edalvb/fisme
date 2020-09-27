@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DocumentsComponent implements OnInit {
 
   selected = 'Cronograma Matricula Extemporánea 2020-2.pdf';
-  path = "../../../assets/documents/";
+  path = "https://edalvb.github.io/fisme/assets/documents/";
   nameDoc = "Cronograma Matricula Extemporánea 2020-2.pdf";
   o_size = false;
 
