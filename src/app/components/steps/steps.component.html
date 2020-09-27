@@ -1,0 +1,38 @@
+<div class="container-main">
+  <h1 style="text-align: center;">Trámites a seguir para obtención del grado Bachiller</h1>
+
+  <p style="font-style: italic; text-align: center;">Revise que sus nombres y apellidos de sus
+    <strong>Documentos</strong> y su
+    <strong>Partida de Nacimiento</strong> sean iguales.</p>
+
+  <mat-accordion class="accordion-headers-align" multi>
+
+    <mat-expansion-panel *ngFor="let doc of documents">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{doc.title}}
+        </mat-panel-title>
+        <mat-panel-description>
+          <span>
+            {{doc.description}}
+            <span class="cost" *ngIf="doc.cost">{{doc.cost | cost}}</span>
+          </span>
+          <mat-icon>{{doc.icon}}</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <mat-list role="list">
+        <mat-list-item *ngFor="let des of doc.content" role="listitem">
+          {{des}}
+        </mat-list-item>
+      </mat-list>
+
+    </mat-expansion-panel>
+
+  </mat-accordion>
+
+  <p [hidden]="true">Luego de realizar el pago correspondiente, remitir los vouchers de pagos o depósito al correo
+    institucional de la oficina correspondiente con copia a la Unidad de Tesorería
+    (tesoreria@untrm.edu.pe)(deysi.solano@untrm.edu.pe</p>
+
+</div>

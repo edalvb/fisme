@@ -24,7 +24,11 @@
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
 
-        <span>FISME</span>
+        <button *ngIf="this.location.path() != ''" mat-icon-button aria-label="boton desplegable" (click)="this.location.back()">
+          <mat-icon>keyboard_backspace</mat-icon>
+        </button>
+
+        <button mat-button [routerLink]="['/']">FISME</button>
 
         <span class="example-spacer"></span>
 
@@ -34,7 +38,7 @@
       </mat-toolbar-row>
     </mat-toolbar>
 
-    <mat-drawer-container class="contenido-main">
+    <mat-drawer-container align="center" class="contenido-main">
       <router-outlet></router-outlet>
     </mat-drawer-container>
 

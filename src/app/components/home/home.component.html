@@ -1,38 +1,15 @@
-<div class="container-main">
-  <h1 style="text-align: center;">Trámites a seguir para obtención del grado Bachiller</h1>
-
-  <p style="font-style: italic; text-align: center;">Porfavor revisar que sus nombres y apellidos de sus documentos y su
-    DNI sean iguales.</p>
-
-  <mat-accordion class="accordion-headers-align" multi>
-
-    <mat-expansion-panel *ngFor="let doc of documents">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          {{doc.title}}
-        </mat-panel-title>
-        <mat-panel-description>
-          <span>
-            {{doc.description}}
-            <span class="cost" *ngIf="doc.cost">{{doc.cost | cost}}</span>
-          </span>
-          <mat-icon>{{doc.icon}}</mat-icon>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <mat-list role="list">
-        <mat-list-item *ngFor="let des of doc.content" role="listitem">
-          {{des}}
-        </mat-list-item>
-      </mat-list>
-
-    </mat-expansion-panel>
-
-  </mat-accordion>
-
-  <p [hidden]="true">Luego de realizar el pago correspondiente, remitir los vouchers de pagos o depósito al correo
-    institucional de la oficina correspondiente con copia a la Unidad de Tesorería
-    (tesoreria@untrm.edu.pe)(deysi.solano@untrm.edu.pe</p>
-
-
-</div>
+<mat-card class="example-card" *ngFor="let el of algo">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{el.title}}</mat-card-title>
+    <mat-card-subtitle>{{el.subtitle}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      {{el.description}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button [routerLink]="[el.link]">Ir</button>
+  </mat-card-actions>
+</mat-card>

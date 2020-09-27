@@ -1,0 +1,14 @@
+<mat-form-field appearance="fill">
+  <mat-label>Selecciona un documento</mat-label>
+  <mat-select [(value)]="nameDoc" (ngMode)="nameDoc">
+    <mat-option *ngFor="let doc of documents" (click)="pdfSrc= path + doc.link" value='{{doc.link}}'>{{doc.title}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<pdf-viewer
+  [src]='pdfSrc'
+  [render-text]="true"
+  style="display: block;"
+  [original-size]="o_size"
+></pdf-viewer>
