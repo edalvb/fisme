@@ -1,5 +1,6 @@
-.example-card {
+.contenedor-cad {
+  display: inline-block;
   max-width: 200px;
   margin: 1em;
-  display: inline-block;
+  cursor: pointer;
 }

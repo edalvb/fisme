@@ -10,7 +10,6 @@ export class HomeComponent implements OnInit {
   algo = [
     {
       title: "Bachiller",
-      subtitle: "Pasos",
       description: "Trámites a seguir para obtención del grado Bachiller",
       link: "/bachiller"
     },

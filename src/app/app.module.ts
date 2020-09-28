@@ -9,6 +9,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
+import { MatRippleModule } from '@angular/material/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -44,7 +45,8 @@ import { DocumentsComponent } from './components/others/documents/documents.comp
     MatToolbarModule,
     MatSidenavModule,
     MatCardModule,
-    MatSelectModule
+    MatSelectModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
