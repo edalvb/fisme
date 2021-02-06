@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// Angular Material
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -10,6 +11,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRippleModule } from '@angular/material/core';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+// Angular Material
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,9 +43,7 @@ import { DocumentsComponent } from './components/others/documents/documents.comp
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    PdfViewerModule,
-    BrowserAnimationsModule,
+    // Angular Material
     MatExpansionModule,
     MatIconModule,
     MatButtonModule,
@@ -46,7 +52,17 @@ import { DocumentsComponent } from './components/others/documents/documents.comp
     MatSidenavModule,
     MatCardModule,
     MatSelectModule,
-    MatRippleModule
+    MatRippleModule,
+    MatStepperModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCheckboxModule,
+    // Angular Material
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    PdfViewerModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

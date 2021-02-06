@@ -13,11 +13,11 @@ export class HomeComponent implements OnInit {
       description: "Trámites a seguir para obtención del grado Bachiller",
       link: "/bachiller"
     },
-    {
-      title: "Documentos",
-      description: "Documentación relacionada con la FISME",
-      link: "/documents"
-    },
+    // {
+    //   title: "Documentos",
+    //   description: "Documentación relacionada con la FISME",
+    //   link: "/documents"
+    // },
   ]
 
   constructor() { }

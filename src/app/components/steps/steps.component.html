@@ -3,33 +3,24 @@
 
   <p style="font-style: italic; text-align: center;">Revise que sus nombres y apellidos de sus
     <strong>Documentos</strong> y su
-    <strong>Partida de Nacimiento</strong> sean iguales.</p>
+    <strong>Partida de Nacimiento</strong> sean iguales.
+  </p>
 
-  <mat-accordion class="accordion-headers-align" multi>
+  <mat-vertical-stepper #stepper>
 
-    <mat-expansion-panel *ngFor="let doc of documents">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          {{doc.title}}
-        </mat-panel-title>
-        <mat-panel-description>
-          <span>
-            {{doc.description}}
-            <span class="cost" *ngIf="doc.cost">{{doc.cost | cost}}</span>
-          </span>
-          <mat-icon>{{doc.icon}}</mat-icon>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
+    <mat-step *ngFor="let doc of documents" [stepControl]="firstFormGroup">
 
-      <mat-list role="list">
-        <mat-list-item *ngFor="let des of doc.content" role="listitem">
-          {{des}}
-        </mat-list-item>
-      </mat-list>
+      <ng-template matStepLabel>{{doc.title}}</ng-template>
 
-    </mat-expansion-panel>
+      <div style="display: table; margin-bottom: 6px;">
+        <b *ngIf="doc.cost">Costo: <i>S/ {{doc.cost}}</i></b>
+      </div>
 
-  </mat-accordion>
+      <mat-checkbox style="display: table;" *ngFor="let des of doc.content">{{des}}</mat-checkbox>
+
+    </mat-step>
+
+  </mat-vertical-stepper>
 
   <p [hidden]="true">Luego de realizar el pago correspondiente, remitir los vouchers de pagos o depósito al correo
     institucional de la oficina correspondiente con copia a la Unidad de Tesorería

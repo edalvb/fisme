@@ -1,6 +1,12 @@
 import { Component, OnInit, ViewChild } from '@angular/core'
 import { MatAccordion } from '@angular/material/expansion';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Document } from "../../models/document";
+
+export interface Section {
+  name: string;
+  updated: Date;
+}
 
 @Component({
   selector: 'app-steps',
@@ -10,11 +16,15 @@ import { Document } from "../../models/document";
 export class StepsComponent implements OnInit {
   @ViewChild(MatAccordion) accordion: MatAccordion;
 
+  isLinear = false;
+  firstFormGroup: FormGroup;
+  secondFormGroup: FormGroup;
+
   ctaUNTRM: string = "026-1022419";
 
   documents: Document[] = [
     {
-      title: "Constancia",
+      title: "Constancia de Esgresado",
       description: "Egresado",
       cost: 12.00,
       content: [
@@ -23,7 +33,7 @@ export class StepsComponent implements OnInit {
       ]
     },
     {
-      title: "Constancia",
+      title: "Constancia de Primera matrícula",
       description: "Primera matrícula",
       cost: 12.00,
       content: [
@@ -32,7 +42,7 @@ export class StepsComponent implements OnInit {
       ]
     },
     {
-      title: "Certificado",
+      title: "Certificado de Estudios",
       description: "Estudios",
       cost: "~150.00",
       content: [
@@ -41,14 +51,15 @@ export class StepsComponent implements OnInit {
       ]
     },
     {
-      title: "DNI",
+      title: "Copia de DNI Legalizado",
       description: "Copia de DNI legalizado",
+      cost: "~5.00",
       content: [
-        "Cuesta alrededor de S/ 5.00 en el Notario"
+        "Legalízalo en el Notario"
       ]
     },
     {
-      title: "SISNOA",
+      title: "Constancia No Adeudo",
       description: "Constancia No Adeudo",
       cost: 10.00,
       content: [
@@ -57,18 +68,17 @@ export class StepsComponent implements OnInit {
       ]
     },
     {
-      title: "Fedatear",
+      title: "Fedateo de Documentos en Secretaría General",
       description: "Documentos",
       content: [
-        "Hacer el fedateo en Secretaría General de los siguientes:",
-        "Certificado de Computación",
-        "Certificado de Inglés",
-        "Certificado de Actividades Integradoras",
-        "Resolución de Prácticas Pre Profesionales"
+        "Fedateo de Certificado de Computación",
+        "Fedateo de Certificado de Inglés",
+        "Fedateo de Certificado de Actividades Integradoras",
+        "Fedateo de Resolución de Prácticas Pre Profesionales"
       ]
     },
     {
-      title: "Carpeta",
+      title: "Adquirir Carpeta Bachiller",
       description: "Adquirir Carpeta Bachiller",
       cost: 150.00,
       content: [
@@ -79,14 +89,14 @@ export class StepsComponent implements OnInit {
       ]
     },
     {
-      title: "Presentar",
+      title: "Presentar Carpeta de Bachiller",
       description: "Carpeta de Bachiller",
       content: [
         `Presentar todos los requisitos a la Facultad.`
       ]
     },
     {
-      title: "Constancia",
+      title: "Constancia de Registro de Grado",
       description: "Registro de Grado",
       content: [
         `Firmar el "Libro de Grado" en la Facultad.`,
@@ -96,7 +106,7 @@ export class StepsComponent implements OnInit {
       ]
     },
     {
-      title: "Caligrafiado",
+      title: "Tramitar Caligrafiado",
       description: "Tramitar Caligrafiado",
       cost: 25,
       content: [
@@ -107,9 +117,40 @@ export class StepsComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  folders: Section[] = [
+    {
+      name: 'Photos',
+      updated: new Date('1/1/16'),
+    },
+    {
+      name: 'Recipes',
+      updated: new Date('1/17/16'),
+    },
+    {
+      name: 'Work',
+      updated: new Date('1/28/16'),
+    }
+  ];
+  notes: Section[] = [
+    {
+      name: 'Vacation Itinerary',
+      updated: new Date('2/20/16'),
+    },
+    {
+      name: 'Kitchen Remodel',
+      updated: new Date('1/18/16'),
+    }
+  ];
+
+  constructor(private _formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
+    this.firstFormGroup = this._formBuilder.group({
+      firstCtrl: ['', Validators.required]
+    });
+    this.secondFormGroup = this._formBuilder.group({
+      secondCtrl: ['', Validators.required]
+    });
   }
 
 }
