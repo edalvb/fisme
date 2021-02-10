@@ -68,13 +68,12 @@ export class StepsComponent implements OnInit {
       ]
     },
     {
-      title: "Fedateo de Documentos en Secretaría General",
+      title: "Fedateo de Certificados",
       description: "Documentos",
+      cost: 8.00,
       content: [
-        "Fedateo de Certificado de Computación",
-        "Fedateo de Certificado de Inglés",
-        "Fedateo de Certificado de Actividades Integradoras",
-        "Fedateo de Resolución de Prácticas Pre Profesionales"
+        "En caja pagar por autenticación de documentos (S/1.00 por cada cara)",
+        "En Secretaría General fedatear; Certificado de Computación, Inglés y Actividades Integradoras"
       ]
     },
     {
@@ -114,31 +113,6 @@ export class StepsComponent implements OnInit {
         `Solicitud de Caligrafiado`,
         `2 fotos tamaño carnet con terno oscuro, camisa blanca y fondo blanco, en material mate.`
       ]
-    }
-  ];
-
-  folders: Section[] = [
-    {
-      name: 'Photos',
-      updated: new Date('1/1/16'),
-    },
-    {
-      name: 'Recipes',
-      updated: new Date('1/17/16'),
-    },
-    {
-      name: 'Work',
-      updated: new Date('1/28/16'),
-    }
-  ];
-  notes: Section[] = [
-    {
-      name: 'Vacation Itinerary',
-      updated: new Date('2/20/16'),
-    },
-    {
-      name: 'Kitchen Remodel',
-      updated: new Date('1/18/16'),
     }
   ];
 

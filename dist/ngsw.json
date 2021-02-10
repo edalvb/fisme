@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1612616857619,
+  "timestamp": 1612928717095,
   "index": "/fisme/index.html",
   "assetGroups": [
     {
@@ -12,7 +12,7 @@
       },
       "urls": [
         "/fisme/index.html",
-        "/fisme/main.12b0c70eb54ec82a487a.js",
+        "/fisme/main.0b35f9febff055c64b68.js",
         "/fisme/manifest.webmanifest",
         "/fisme/polyfills.87ae580592d391ca727f.js",
         "/fisme/runtime.7b63b9fd40098a2e8207.js",
@@ -52,8 +52,8 @@
     "/fisme/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/fisme/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/fisme/assets/img/favicon.png": "93a031df735ed12446bfa5e0d60fbe02597f5ff5",
-    "/fisme/index.html": "8019016a79bb762eb9405a5bcf1fb1d3b89f75f0",
-    "/fisme/main.12b0c70eb54ec82a487a.js": "b6192b10831bd880260c9c7870232d18a531215c",
+    "/fisme/index.html": "6d27967242f501572a82bdca12df656414ee7627",
+    "/fisme/main.0b35f9febff055c64b68.js": "955bc127747322551bf4b13d5ccd813d5d640f65",
     "/fisme/manifest.webmanifest": "ef07d4d0415f4b06b028019c9ccc62bfedb1cefa",
     "/fisme/polyfills.87ae580592d391ca727f.js": "57522d7082e517494251a7d889202227db2d427c",
     "/fisme/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
