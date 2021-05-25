@@ -5,14 +5,29 @@
 
     <mat-toolbar color="primary" style="width: 100%;">
       <mat-toolbar-row>
+        <mat-icon svgIcon="logo-fisme"></mat-icon>
         <span style="text-align: center;">FISME</span>
       </mat-toolbar-row>
     </mat-toolbar>
 
     <mat-nav-list>
-      <a mat-list-item>
-        <mat-icon>home</mat-icon> Bachiller
+
+      <a mat-list-item [routerLink]="['/autoridades']">
+        <mat-icon>school</mat-icon> <span style="padding: 0% 4%;">Autoridades</span>
       </a>
+
+      <a mat-list-item [routerLink]="['/documentos']">
+        <mat-icon>description</mat-icon> <span style="padding: 0% 4%;">Documentos</span>
+      </a>
+
+      <a mat-list-item [routerLink]="['/noticias']">
+        <mat-icon>receipt_long</mat-icon> <span style="padding: 0% 4%;">Noticias</span>
+      </a>
+
+      <a mat-list-item [routerLink]="['/directorio']">
+        <mat-icon>contact_phone</mat-icon> <span style="padding: 0% 4%;">Directorio</span>
+      </a>
+
     </mat-nav-list>
   </mat-sidenav>
 
@@ -25,10 +40,10 @@
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
 
-        <button *ngIf="this.location.path() != ''" mat-icon-button aria-label="boton desplegable"
+        <!-- <button *ngIf="this.location.path() != ''" mat-icon-button aria-label="boton desplegable"
           (click)="this.location.back()">
           <mat-icon>arrow_back</mat-icon>
-        </button>
+        </button> -->
 
         <button mat-button [routerLink]="['/']">
           <mat-icon svgIcon="logo-fisme"></mat-icon>
@@ -37,22 +52,26 @@
 
         <span class="example-spacer"></span>
 
-        <button *ngIf="!resize_sm" mat-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" [routerLink]="['/autoridades']">
+        <button *ngIf="!resize_sm" mat-button class="example-icon favorite-icon"
+          aria-label="Example icon-button with heart icon" [routerLink]="['/autoridades']">
           <mat-icon>school</mat-icon>
           <span style="padding: 0% 4%;" *ngIf="!resize_xs">Autoridades</span>
         </button>
 
-        <button *ngIf="!resize_sm" mat-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" [routerLink]="['/documentos']">
+        <button *ngIf="!resize_sm" mat-button class="example-icon favorite-icon"
+          aria-label="Example icon-button with heart icon" [routerLink]="['/documentos']">
           <mat-icon>description</mat-icon>
           <span style="padding: 0% 4%;" *ngIf="!resize_xs">Documentos</span>
         </button>
 
-        <button *ngIf="!resize_sm" mat-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" [routerLink]="['/noticias']">
+        <button *ngIf="!resize_sm" mat-button class="example-icon favorite-icon"
+          aria-label="Example icon-button with heart icon" [routerLink]="['/noticias']">
           <mat-icon>receipt_long</mat-icon>
           <span style="padding: 0% 4%;" *ngIf="!resize_xs">Noticias</span>
         </button>
 
-        <button *ngIf="!resize_sm" mat-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" [routerLink]="['/directorio']">
+        <button *ngIf="!resize_sm" mat-button class="example-icon favorite-icon"
+          aria-label="Example icon-button with heart icon" [routerLink]="['/directorio']">
           <mat-icon>contact_phone</mat-icon>
           <span style="padding: 0% 4%;" *ngIf="!resize_xs">Directorio</span>
         </button>
