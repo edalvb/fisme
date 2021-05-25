@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -30,6 +31,10 @@ import { CostPipe } from './pipes/cost.pipe';
 import { StepsComponent } from './components/steps/steps.component';
 import { HorarioComponent } from './components/horario/horario.component';
 import { DocumentsComponent } from './components/others/documents/documents.component';
+import { AutoridadesComponent } from './components/pages/autoridades/autoridades.component';
+import { DocumentosComponent } from './components/pages/documentos/documentos.component';
+import { NoticiasComponent } from './components/pages/noticias/noticias.component';
+import { DirectorioComponent } from './components/pages/directorio/directorio.component';
 
 @NgModule({
   declarations: [
@@ -38,11 +43,16 @@ import { DocumentsComponent } from './components/others/documents/documents.comp
     CostPipe,
     StepsComponent,
     HorarioComponent,
-    DocumentsComponent
+    DocumentsComponent,
+    AutoridadesComponent,
+    DocumentosComponent,
+    NoticiasComponent,
+    DirectorioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     // Angular Material
     MatExpansionModule,
     MatIconModule,
