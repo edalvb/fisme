@@ -35,6 +35,7 @@ import { AutoridadesComponent } from './components/pages/autoridades/autoridades
 import { DocumentosComponent } from './components/pages/documentos/documentos.component';
 import { NoticiasComponent } from './components/pages/noticias/noticias.component';
 import { DirectorioComponent } from './components/pages/directorio/directorio.component';
+import { DetailsAutoridadesComponent } from './components/details-autoridades/details-autoridades.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { DirectorioComponent } from './components/pages/directorio/directorio.co
     AutoridadesComponent,
     DocumentosComponent,
     NoticiasComponent,
-    DirectorioComponent
+    DirectorioComponent,
+    DetailsAutoridadesComponent
   ],
   imports: [
     BrowserModule,

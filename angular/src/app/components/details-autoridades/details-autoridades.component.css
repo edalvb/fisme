@@ -1,0 +1,8 @@
+.example-card {
+  max-width: 200px;
+}
+
+.example-header-image {
+  background-image: url('http://fisme.untrm.edu.pe/centpro/images/equipo-santacruz.jpg');
+  background-size: cover;
+}

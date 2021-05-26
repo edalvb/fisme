@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
     {
       title: "Bachiller",
       description: "Trámites a seguir para obtención del grado Bachiller",
-      link: "/bachiller"
+      link: "/documentos/bachiller"
     },
     // {
     //   title: "Documentos",

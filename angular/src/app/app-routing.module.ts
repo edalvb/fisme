@@ -19,7 +19,7 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: "bachiller",
+    path: "documentos/bachiller",
     component: StepsComponent,
   },
   {
