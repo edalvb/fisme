@@ -20,6 +20,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { OrgChartModule } from 'ng2-org-chart';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -55,6 +56,7 @@ import { DetailsAutoridadesComponent } from './components/details-autoridades/de
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    OrgChartModule,
     // Angular Material
     MatExpansionModule,
     MatIconModule,

@@ -1,2 +1,5 @@
 <h1 style="text-align: start;">Autoridades</h1>
-<app-details-autoridades *ngFor="let a of autoridades" [autoridad]="a"></app-details-autoridades>
+<!-- <app-details-autoridades *ngFor="let a of autoridades" [autoridad]="a"></app-details-autoridades> -->
+<div>
+  <ng2-org-chart [topEmployee]="topEmployee"></ng2-org-chart>
+</div>
