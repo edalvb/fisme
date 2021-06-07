@@ -37,6 +37,7 @@ import { DocumentosComponent } from './components/pages/documentos/documentos.co
 import { NoticiasComponent } from './components/pages/noticias/noticias.component';
 import { DirectorioComponent } from './components/pages/directorio/directorio.component';
 import { DetailsAutoridadesComponent } from './components/details-autoridades/details-autoridades.component';
+import { TituloComponent } from './components/others/titulo/titulo.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { DetailsAutoridadesComponent } from './components/details-autoridades/de
     DocumentosComponent,
     NoticiasComponent,
     DirectorioComponent,
-    DetailsAutoridadesComponent
+    DetailsAutoridadesComponent,
+    TituloComponent
   ],
   imports: [
     BrowserModule,
@@ -77,6 +79,12 @@ import { DetailsAutoridadesComponent } from './components/details-autoridades/de
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectorioComponent implements OnInit {
 
+  titulo: string = "Directorio";
+
   constructor() { }
 
   ngOnInit(): void {
